@@ -29,6 +29,10 @@ Merged upstream:
 - Precision over promises. If a tool reports a number, the README says whether it is measured or
   estimated.
 - Reviews are input. Every finding gets reproduced, then fixed or explicitly declined with a reason.
+- Human plus agent. Much of this code is written with an AI coding agent, and the commits say so.
+  The agent works under fixed rules: a failing test before a bug fix; lint, types and tests before
+  every commit; an independent review pass on non-trivial diffs; nothing is pushed without my
+  explicit approval.
 
 **Elsewhere**
 
