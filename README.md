@@ -3,17 +3,27 @@
 Backend engineer. Python, mostly. I care about the parts of a system that fail quietly:
 message delivery, caches, retries, the second request that does not look like the first.
 
+**Open source**
+
+Merged upstream:
+
+- CPython · [Fix `asyncio.as_completed()` outside a running event loop](https://github.com/python/cpython/pull/157857)
+- CPython · [Remove dead `_repr_info()` methods from `asyncio.windows_events`](https://github.com/python/cpython/pull/160241)
+- Django · [Include the invalid view type in the `path()` / `re_path()` error](https://github.com/django/django/pull/21820)
+- Django · [Reorganize the security policy page](https://github.com/django/django/pull/22052)
+- Django · [Fix outdated docs for the `JsonResponse` `safe` parameter](https://github.com/django/django/pull/21725)
+
+I also review asyncio pull requests in CPython:
+[reviews](https://github.com/python/cpython/pulls?q=is%3Apr+reviewed-by%3AOsmnvAslan+-author%3AOsmnvAslan).
+
 **What I build**
 
-- [**promptcachelint**](https://github.com/OsmnvAslan/promptcachelint) · explains why an LLM prompt cache missed.
-  Diffs consecutive requests and names the block, the offset and the bytes that broke the prefix,
-  for Anthropic and OpenAI. Zero dependencies. `pip install promptcachelint`
 - [**txoutbox**](https://github.com/OsmnvAslan/txoutbox) · transactional outbox relay for asyncio.
   Bring your own table and your own broker; the core has no dependencies and ships contract tests
   for adapters. `pip install txoutbox`
-- [**batch-creative**](https://github.com/OsmnvAslan/batch-creative) · product photos plus one
-  reference image in, a consistent series of social posts out. Image-to-image generation with
-  failover, streamed over SSE, persisted in SQLite. Next.js.
+- [**promptcachelint**](https://github.com/OsmnvAslan/promptcachelint) · explains why an LLM prompt cache missed.
+  Diffs consecutive requests and names the block, the offset and the bytes that broke the prefix,
+  for Anthropic and OpenAI. Zero dependencies. `pip install promptcachelint`
 
 **How I work**
 
@@ -25,5 +35,7 @@ message delivery, caches, retries, the second request that does not look like th
 
 **Elsewhere**
 
-PyPI: [promptcachelint](https://pypi.org/project/promptcachelint/) · [txoutbox](https://pypi.org/project/txoutbox/)  
+Notes: [osmnvaslan.github.io](https://osmnvaslan.github.io/)  
+PyPI: [txoutbox](https://pypi.org/project/txoutbox/) · [promptcachelint](https://pypi.org/project/promptcachelint/)  
+Also: [batch-creative](https://github.com/OsmnvAslan/batch-creative), a small Next.js app for batch image generation  
 Mail: osmnvaslan@gmail.com
