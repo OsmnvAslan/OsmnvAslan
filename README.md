@@ -13,9 +13,6 @@ Merged upstream:
 - Django · [Reorganize the security policy page](https://github.com/django/django/pull/22052)
 - Django · [Fix outdated docs for the `JsonResponse` `safe` parameter](https://github.com/django/django/pull/21725)
 
-I also review asyncio pull requests in CPython:
-[reviews](https://github.com/python/cpython/pulls?q=is%3Apr+reviewed-by%3AOsmnvAslan+-author%3AOsmnvAslan).
-
 **What I build**
 
 - [**txoutbox**](https://github.com/OsmnvAslan/txoutbox) · transactional outbox relay for asyncio.
